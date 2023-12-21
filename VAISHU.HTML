@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday, Vaishnavi!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #FFD700;
+        }
+        p {
+            opacity: 0;
+            color: #00fbff;
+            transition: opacity 1s ease-in-out;
+        }
+        button {
+            background-color: #FFA500;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head> 
+<body background="V.jpg">
+    <h1 id="wish">🎉🎈 Happy Birthday, Vaishnavi! 🎈🎉</h1>
+    <p id="line1">Bhai-behen ka pyaar 💞, jaise BTS ka gaana 🎵,</p>
+    <p id="line2">Vaishu, teri har khushi ho 😊, jaise K-pop ka afsana 🎧.</p>
+    <p id="line3">Jaise Jin ki awaaz 🎤, teri muskurahat bhi ho meethi 🍬,</p>
+    <p id="line4">Aur Suga ki tarah, tera har din ho geet ki 🎶.</p>
+    <p id="line5">V ki tarah, tu bhi ho unique 🌟,</p>
+    <p id="line6">Aur Jungkook ki tarah, teri talent bhi ho peak 🏔️.</p>
+    <p id="line7">Jaise J-Hope, teri zindagi mein ho har din sunshine ☀️,</p>
+    <p id="line8">Aur Jimin ki tarah, teri adaaein bhi ho fine 💃.</p>
+    <p id="line9">Meri pyaari behen Vaishu 👭, tu hai life ka star 🌟,</p>
+    <p id="line10">Tere janamdin ki khushi ho 🎂, jaise BTS ka superhit yaar 🎤.</p>
+    <p id="line11">Happy Birthday, Vaishnavi 🥳, yeh hai bhai ka pyaar ka kissa 💖,</p>
+    <p id="line12">Tere saath har din ho 🌈, pyaar ka jadoo 🎇 aur bliss ka kissa! 🎉🎂💙</p>
+    <button onclick="revealLines()">Reveal Lines</button>
+    <script>
+        function revealLines() {
+            const lines = document.querySelectorAll('p');
+            let delay = 0;
+
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.style.opacity = '1';
+                }, delay);
+                delay += 1000; // 1000 milliseconds (1 second) delay between each line
+            });
+        }
+    </script>
+</body>
+</html>
